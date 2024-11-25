@@ -1,0 +1,30 @@
+.card{
+    width: 215%;
+}
+.content-wrapper{
+    background-color: white;
+}
+.btn{
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background: blue;
+}
+.photo{
+    width: 125px;
+    height: 130px;
+    border: 1px solid rgb(216, 204, 204);
+    border-radius: 5px;
+}
+.btn1{
+    width: 10%;
+}
+#espace{
+    width: 500px;
+   margin-top: 5%;
+}
+select{
+    width: 200px;
+}
+.form-control{
+    width: 250px;
+}

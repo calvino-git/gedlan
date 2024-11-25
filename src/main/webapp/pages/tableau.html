@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GedLan</title>
+
+  
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.8/css/all.min.css">
+
+<link rel="stylesheet" href="css/tableau.css">
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- bar de navigation -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- liens de bar de navigation de gauche -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- liens de bar de navigation de droite -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Bar de recherche -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="connexion.html">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="nav-icon fas fa-ellipsis-h"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" id="aside_G">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">GedLan</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" id="onglets">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="pages/structure.html" class="nav-link active" title="Création et édition des services ou départements">
+              <i class="nav-icon fas fa-building"></i>
+              <p>
+                Gérer votre structure
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/employés.html" class="nav-link" title="Gestion des employés et configuration des droits d'accès sur l'application">
+              <i class=" nav-icon fas fa-users"  id="employés"></i>
+              <p>
+                 Gestion des employés
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/activite.html" class="nav-link">
+              <i class="nav-icon fas fa-address-card"></i>
+              <p>
+                Mes activités
+              </p>
+            </a>
+            
+          
+          </li>
+          <li class="nav-item">
+            <a href="pages/fichier.html" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Gestion de fichiers
+              </p>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a href="pages/tache.html" class="nav-link">
+              <i class="nav-icon fas fa-tasks"></i>
+              <p>
+                Gestion de tâches
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="tableau.html" class="nav-link">
+              <i class="nav-icon fas fa-chart-line"></i>
+              <p>
+                Tableau de bord
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="pages/recherche.html" class="nav-link">
+              <i class="nav-icon fas fa-search"></i>
+              <p>
+                Recherche rapide
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="pages/scanne.html" class="nav-link" title="Visionner l'activité ou les mouvements de tous les utilisateurs de l'application">
+              <i class="nav-icon fas fa-file-alt"></i>
+              <p>
+                Documents scannés
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <div class="float-right d-none d-sm-inline-block">
+              <!-- Notifications -->
+              <li class="nav-item dropdown">
+               <a class="nav-link" data-toggle="dropdown" href="#" title="Editer vos fichers words et vos tableurs">
+                 <i class="nav-icon fas fa-plus"></i><p>
+                  Bureautique
+                </p>
+               </a>
+
+               <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-envelope mr-2"></i> Traitement de texte
+                </a>
+                 <div class="dropdown-divider"></div>
+                 <a href="#" class="dropdown-item">
+                   <i class="fas fa-envelope mr-2"></i> Tableur Excel
+                 </a>
+                 
+                 <div class="dropdown-divider"></div>
+                 <a href="#" class="dropdown-item">
+                   <i class="fas fa-file mr-2"></i> Envoi de mail
+                 </a>
+                 <div class="dropdown-divider"></div>
+               </div>
+             </li>
+           </div>
+          </li>
+          
+           
+        </ul>
+      </nav>
+      <!-- /bar de menu de gauche-->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>0</h3>
+
+                <p>Fichiers</p>
+              </div>
+              
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>0</h3>
+
+                <p>Dossiers</p>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>0</h3>
+
+                <p>Tâches</p>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>1</h3>
+
+                <p>Structures</p>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+
+          <section class="content">
+            <div class="col-12 col-sm-6">
+              <div class="card card-primary card-outline card-outline-tabs">
+                <div class="card-header p-0 border-bottom-0">
+                  <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist" id="onglet">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Activités</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Fichiers par mois</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Fichiers employé par mois</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings1" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Fichiers créés par employé</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings2" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Tâches employé par statut</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings3" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Compilation type de ficher</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-four-tabContent">
+                    <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                      <form action="">
+                        <label for="">Employé :</label>
+                        <select name="" id="">
+                            <option value=""> </option>
+
+                        </select>
+                      </form>
+                      <table id="example2" class="table table-bordered table-hover">
+                          <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Heure</th>
+                            <th>Activité</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          </tfoot>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                        
+                      <section class="col-lg-5 connectedSortable">
+
+                        
+            
+                        <!-- solid sales graph -->
+                        
+                        <!-- Calendar -->
+                        <div class="card bg-gradient-success">
+                          <div class="card-header border-0">
+            
+                            <h3 class="card-title">
+                              <i class="far fa-calendar-alt"></i>
+                             Agenda
+                            </h3>
+                            <!-- tools card -->
+                            <div class="card-tools">
+                              <!-- button with a dropdown -->
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
+                                  <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="dropdown-menu" role="menu">
+                                  <a href="#" class="dropdown-item">Add new event</a>
+                                  <a href="#" class="dropdown-item">Clear events</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a href="#" class="dropdown-item">View calendar</a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!-- /. tools -->
+                          </div>
+                          <!-- /.card-header -->
+                          <div class="card-body pt-0">
+                            <!--The calendar -->
+                            <div id="calendar" style="width: 100%"></div>
+                          </div>
+                          <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                      </section>
+  
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                      <form action="">
+                        <label for="">Années :</label>
+                        <select name="" id="">
+                          <option value="">2024</option>
+                          <option value="">2025</option>
+                          <option value="">2026</option>
+                          <option value="">2027</option>
+                          <option value="">2028</option>
+                          <option value="">2029</option>
+                          <option value="">2030</option>
+                          <option value="">2031</option>
+                          <option value="">2032</option>
+                          <option value="">2033</option>
+                        </select>
+                      </form>
+                      <div class="content-wrapper">
+                      <!-- Main content -->
+                      <section class="content">
+                        <div class="container-fluid">
+                          <div class="row">
+                            
+                            <!-- /.col (LEFT) -->
+                            <div class="col-md-6">
+                              <!-- LINE CHART -->
+                              <div class="card card-info">
+                                
+                                <div class="card-body">
+                                  <div class="chart">
+                                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                  </div>
+                                </div>
+                                <!-- /.card-body -->
+                              </div>
+                              <!-- /.card -->
+                  
+                             
+                              <!-- /.card -->
+                  
+                            </div>
+                            <!-- /.col (RIGHT) -->
+                          </div>
+                          <!-- /.row -->
+                        </div><!-- /.container-fluid -->
+                      </section>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                      
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-four-settings2" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                              <!-- Content Wrapper. Contains page content -->
+
+                              <!-- /.content-wrapper -->
+                                </div>
+                                <div class="tab-pane fade" id="custom-tabs-four-settings3" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                                  
+                                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card -->
+              </div>
+            </div>
+              
+              
+              
+          </section>
+        </div>
+       
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+ 
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2024 <a href=""></a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+       <!-- Notifications -->
+       <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">7</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">7 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 nouveaux messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 nouveaux rapports
+            <span class="float-right text-muted text-sm">2 jours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Voir toutes les notifications</a>
+        </div>
+      </li>
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+
+
+<script>
+  $(function () {
+    /* ChartJS
+     * -------
+     * Here we will create a few charts using ChartJS
+     */
+
+    //--------------
+    //- AREA CHART -
+    //--------------
+
+    // Get context with jQuery - using jQuery's .get() method.
+    var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
+
+    var areaChartData = {
+      labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [
+        {
+          label               : 'Digital Goods',
+          backgroundColor     : 'rgba(60,141,188,0.9)',
+          borderColor         : 'rgba(60,141,188,0.8)',
+          pointRadius          : false,
+          pointColor          : '#3b8bba',
+          pointStrokeColor    : 'rgba(60,141,188,1)',
+          pointHighlightFill  : '#fff',
+          pointHighlightStroke: 'rgba(60,141,188,1)',
+          data                : [28, 48, 40, 19, 86, 27, 90]
+        },
+        {
+          label               : 'Electronics',
+          backgroundColor     : 'rgba(210, 214, 222, 1)',
+          borderColor         : 'rgba(210, 214, 222, 1)',
+          pointRadius         : false,
+          pointColor          : 'rgba(210, 214, 222, 1)',
+          pointStrokeColor    : '#c1c7d1',
+          pointHighlightFill  : '#fff',
+          pointHighlightStroke: 'rgba(220,220,220,1)',
+          data                : [65, 59, 80, 81, 56, 55, 40]
+        },
+      ]
+    }
+
+    var areaChartOptions = {
+      maintainAspectRatio : false,
+      responsive : true,
+      legend: {
+        display: false
+      },
+      scales: {
+        xAxes: [{
+          gridLines : {
+            display : false,
+          }
+        }],
+        yAxes: [{
+          gridLines : {
+            display : false,
+          }
+        }]
+      }
+    }
+
+    // This will get the first returned node in the jQuery collection.
+    new Chart(areaChartCanvas, {
+      type: 'line',
+      data: areaChartData,
+      options: areaChartOptions
+    })
+
+    //-------------
+    //- LINE CHART -
+    //--------------
+    var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+    var lineChartOptions = $.extend(true, {}, areaChartOptions)
+    var lineChartData = $.extend(true, {}, areaChartData)
+    lineChartData.datasets[0].fill = false;
+    lineChartData.datasets[1].fill = false;
+    lineChartOptions.datasetFill = false
+
+    var lineChart = new Chart(lineChartCanvas, {
+      type: 'line',
+      data: lineChartData,
+      options: lineChartOptions
+    })
+
+    //-------------
+    //- DONUT CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+    var donutData        = {
+      labels: [
+          'Chrome',
+          'IE',
+          'FireFox',
+          'Safari',
+          'Opera',
+          'Navigator',
+      ],
+      datasets: [
+        {
+          data: [700,500,400,600,300,100],
+          backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+        }
+      ]
+    }
+    var donutOptions     = {
+      maintainAspectRatio : false,
+      responsive : true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    new Chart(donutChartCanvas, {
+      type: 'doughnut',
+      data: donutData,
+      options: donutOptions
+    })
+
+    //-------------
+    //- PIE CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+    var pieData        = donutData;
+    var pieOptions     = {
+      maintainAspectRatio : false,
+      responsive : true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    new Chart(pieChartCanvas, {
+      type: 'pie',
+      data: pieData,
+      options: pieOptions
+    })
+
+    //-------------
+    //- BAR CHART -
+    //-------------
+    var barChartCanvas = $('#barChart').get(0).getContext('2d')
+    var barChartData = $.extend(true, {}, areaChartData)
+    var temp0 = areaChartData.datasets[0]
+    var temp1 = areaChartData.datasets[1]
+    barChartData.datasets[0] = temp1
+    barChartData.datasets[1] = temp0
+
+    var barChartOptions = {
+      responsive              : true,
+      maintainAspectRatio     : false,
+      datasetFill             : false
+    }
+
+    new Chart(barChartCanvas, {
+      type: 'bar',
+      data: barChartData,
+      options: barChartOptions
+    })
+
+    //---------------------
+    //- STACKED BAR CHART -
+    //---------------------
+    var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
+    var stackedBarChartData = $.extend(true, {}, barChartData)
+
+    var stackedBarChartOptions = {
+      responsive              : true,
+      maintainAspectRatio     : false,
+      scales: {
+        xAxes: [{
+          stacked: true,
+        }],
+        yAxes: [{
+          stacked: true
+        }]
+      }
+    }
+
+    new Chart(stackedBarChartCanvas, {
+      type: 'bar',
+      data: stackedBarChartData,
+      options: stackedBarChartOptions
+    })
+  })
+</script>
+</body>
+</html>

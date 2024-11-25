@@ -1,0 +1,54 @@
+.content{
+    width: 500px;
+    background-color: white;
+}
+
+.content, .droite{
+    display: inline-block;
+    vertical-align: top;
+    border: 0.1px solid white;
+    font-family: calibri;
+    font-size: 16px;
+    color: rgb(53, 56, 61);
+    font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.photo{
+    margin-left: 17%;
+    width: 125px;
+    height: 130px;
+    border: 1px solid rgb(216, 204, 204);
+    border-radius: 5px;
+}
+.droite{
+    width: 500px;
+    background-color: white;
+}
+.content-wrapper{
+    background-color: white;
+}
+
+table{
+    width: 500px;
+}
+#bar{
+position: fixed;
+}
+select{
+    width: 250px;
+    height: 30px;
+}
+#tel{
+    width: 250px; 
+    border-radius: 5px;
+}
+#desi{
+    width: 250px;  
+}
+#bouton{
+    width: 200px;
+    display: inline;
+    vertical-align: bottom;
+}
+.form-control{
+    width: 250px;
+}

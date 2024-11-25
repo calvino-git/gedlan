@@ -1,0 +1,64 @@
+.content{
+    color: black;
+    width: 1200px;
+}
+.content-wrapper{
+    background-color: white;
+}
+.content, .droite{
+    display: inline-block;
+    vertical-align: top;
+    border: 0.1px solid white;
+    font-family: calibri;
+    font-size: 16px;
+}
+#bouton{
+    width: 200px;
+    display: inline;
+    vertical-align: bottom;
+}
+
+#example1{
+    width: 400px;
+}
+table{
+    width: 400px;
+}
+#bar{
+position: fixed;
+}
+#left1, #centre,  #right{
+display: inline-block;
+}
+#left1{
+    width: 300px;
+}
+#centre,  #right{
+    vertical-align: top;
+}
+#centre{
+    width: 300px;
+}
+#desc{
+    width: 250px;
+}
+#dd{
+    width: 250px;
+}
+#df{
+    width: 250px;
+}
+
+#desi{
+    width: 250px;
+}
+#affichage{
+    width: 250px;
+}
+.form-control{
+    width: 250px;
+}
+#titre{
+    text-align: center;
+    color: rgb(16, 138, 238);
+}

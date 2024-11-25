@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GedLan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- css de modification -->
+<link rel="stylesheet" href="../css/style1.css">
+<!-- css de modification -->
+<link rel="stylesheet" href="../css/employes.css">
+
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../connexion.html">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <div class="float-right d-none d-sm-inline-block">
+        <!-- Notifications -->
+        <li class="nav-item dropdown">
+         <a class="nav-link" data-toggle="dropdown" href="#">
+           <i class="nav-icon fas fa-ellipsis-h"></i>
+         </a>
+         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+           <div class="dropdown-divider"></div>
+           <a href="#" class="dropdown-item">
+            Configurer le serveur mail
+             
+           </a>
+           
+           <div class="dropdown-divider"></div>
+           <a href="#" class="dropdown-item">
+            Changer de thème
+           </a>
+         </div>
+       </li>
+     </div>
+
+          
+        </div>
+      
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" id="bar">
+    <!-- Brand Logo -->
+    <a href="" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">GedLan</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nom utilisateur</a>
+        </div>
+      </div>
+
+      
+
+     <!-- Sidebar Menu -->
+     <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" id="onglets">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item menu-open">
+          <a href="../structure.html" class="nav-link active" title="Création et édition des services ou départements">
+            <i class="nav-icon fas fa-building"></i>
+            <p>
+              Gérer votre structure
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="employés.html" class="nav-link" title="Gestion des employés et configuration des droits d'accès sur l'application">
+            <i class=" nav-icon fas fa-users"  id="employés"></i>
+            <p>
+               Gestion des employés
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="activite.html" class="nav-link">
+            <i class="nav-icon fas fa-address-card"></i>
+            <p>
+              Mes activités
+            </p>
+          </a>
+          
+        
+        </li>
+        <li class="nav-item">
+          <a href="fichier.html" class="nav-link">
+            <i class="nav-icon fas fa-copy"></i>
+            <p>
+              Gestion de fichiers
+            </p>
+          </a>
+
+        </li>
+        <li class="nav-item">
+          <a href="tache.html" class="nav-link">
+            <i class="nav-icon fas fa-tasks"></i>
+            <p>
+              Gestion de tâches
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="../tableau.html" class="nav-link">
+            <i class="nav-icon fas fa-chart-line"></i>
+            <p>
+              Tableau de bord
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="recherche.html" class="nav-link">
+            <i class="nav-icon fas fa-search"></i>
+            <p>
+              Recherche rapide
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="scanne.html" class="nav-link" title="Visionner l'activité ou les mouvements de tous les utilisateurs de l'application">
+            <i class="nav-icon fas fa-file-alt"></i>
+            <p>
+              Documents scannés
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <div class="float-right d-none d-sm-inline-block">
+            <!-- Notifications -->
+            <li class="nav-item dropdown">
+             <a class="nav-link" data-toggle="dropdown" href="#" title="Editer vos fichers words et vos tableurs">
+               <i class="nav-icon fas fa-plus"></i><p>
+                Bureautique
+              </p>
+             </a>
+             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> Traitement de texte
+              </a>
+               <div class="dropdown-divider"></div>
+               <a href="#" class="dropdown-item">
+                 <i class="fas fa-envelope mr-2"></i> Tableur Excel
+               </a>
+               
+               <div class="dropdown-divider"></div>
+               <a href="#" class="dropdown-item">
+                 <i class="fas fa-file mr-2"></i> Envoi de mail
+               </a>
+               <div class="dropdown-divider"></div>
+               </div>
+             </li>
+           </div>
+          </li>
+          
+           
+        </ul>
+      </nav>
+    <!-- /bar de menu de gauche-->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+<div class="content-wrapper">
+<section class="content">
+  <div class="col-12 col-sm-6">
+    <div class="card card-primary card-outline card-outline-tabs">
+      <div class="card-header p-0 border-bottom-0">
+        <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist" id="onglet">
+          <li class="nav-item">
+            <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Monitoring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Identification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Droits d'accès</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Fichier employé</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="tab-content" id="custom-tabs-four-tabContent">
+          <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+            <table id="example2" class="table table-bordered table-hover">
+              <thead>
+              <tr>
+                <th>Matricule</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Né(e)</th>
+                <th>Date embauche</th>
+                <th>Date fin probation</th>
+                <th>Fonction</th>
+                <th>Service</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" id="left2">
+              <!-- Add icons to the links using the .nav-icon class
+                   with font-awesome or any other icon font library -->
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active" id="lien">
+                  
+                  <p>
+                   Info Personnelle
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <form class="form">
+                    <label for="">Matricule :</label>
+                    <input type="text" id="mat" class="form-control">
+                    
+                    <label for="">Nom :</label>
+                    <input type="text" id="no" class="form-control">
+                    
+                    <label for="">Prénom(s) :</label>
+                    <input type="text" id="pr" class="form-control">
+                    
+                    <label for="">Date nais. :</label>
+                    <input type="date" id="dan" class="form-control">
+                  
+                    <label for="">Statut matrimoniale :</label>
+                    <select name="" id="stm" class="form-control">
+                      <option value=""> </option>
+                      <option value="">Célibataire</option>
+                      <option value="">Marié(e)</option>
+                    </select>
+                    
+                    <label for="">Nombre d'enfant(s) :</label>
+                    <input type="text" id="noe" class="form-control">
+                    
+                    <label for="">Adresse :</label>
+                    <textarea name="" id="ad" class="form-control"></textarea>
+                    <p></p>
+                    <label for="">Tel. perso. :</label>
+                    <input type="text" id="tel" class="form-control">
+                    
+                    <label for="">Email :</label>
+                    <input type="text" id="ema" class="form-control">
+                    
+                    <label for="">Login :</label>
+                    <input type="text" id="log" class="form-control">
+                    
+                    <label for="">Mot de passe :</label>
+                    <input type="password" id="mdp" class="form-control">
+                    <p></p>
+                    </form> 
+                </ul>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active" id="lien">
+                  
+                  <p>
+                   Gestion de contrat
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <form class="form">
+                    <label for="">Fonction :</label>
+                    <input type="text" id="fo" class="form-control">
+                    
+                    <label for="">Tâche fonction :</label>
+                    <input type="text" id="tf" class="form-control">
+                   
+                    <label for="">Service :</label>
+                    <select name="" id="ser" class="form-control">
+                      <option value="" ></option>
+                    </select>
+                    
+                    <label for="">Dépend de :</label>
+                    <select name="" id="ded" class="form-control">
+                      <option value="" ></option>
+                      <option value="" ></option>
+                    </select>
+                    
+                    <label for="">Date d'embauche :</label>
+                    <input type="date" id="dae" class="form-control">
+                    
+                    <label for="">Date fin probation :</label>
+                    <input type="date" id="dfp" class="form-control">
+                   
+                    <label for="">Type contrat :</label>
+                    <select name="" id="tc" class="form-control">
+                      <option value="" ></option>
+                      <option value="" >Stage</option>
+                      <option value="" >CDD</option>
+                      <option value="" >CDI</option>
+                    </select>
+                    
+                    <label for="">Echelon :</label>
+                    <select name="" id="ech" class="form-control">
+                      <option value="" ></option>
+                      <option value="" >1</option>
+                      <option value="" >2</option>
+                      <option value="" >3</option>
+                    </select>
+                   
+                    <label for="">Salaire brut :</label>
+                    <input type="text" id="sab" class="form-control">
+                    
+                    <label for="">Matricule CNSS :</label>
+                    <input type="text" id="mac" class="form-control">
+                    
+                    <label for="">Temps travail prévu :</label>
+                    <input type="text" id="ttp" class="form-control">
+                    <p></p>
+                    </form> 
+                </ul>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active" id="lien">
+                  <p>
+                  Gestion de carrière
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <form class="form">
+                    <label for="ma">Niveau étude :</label>
+                   <select name="" id="nv" class="form-control">
+                    <option value=""></option>
+                    <option value="">BAC</option>
+                    <option value="">Licence</option>
+                    <option value="">Doctorat</option>
+                    <option value="">Ingénieur</option>
+                   </select>
+                    
+                    <label for="no">Compétence :</label>
+                    <textarea name="" id="zone" class="form-control"></textarea>
+                    
+                    <label for="pr">Formation projetée :</label>
+                    <textarea name="" id="zone1" class="form-control"></textarea>
+                    
+                    <label for="dn">Poste souhaité :</label>
+                    <input type="text" id="ps" class="form-control">
+                    <p></p>
+                    </form> 
+                </ul>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active" id="lien">
+                  <p>
+                   Document
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview" id="table">
+                  <p></p>
+                  <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                      <th>Fichier</th>
+                      <th>Dossier</th>
+                      <th>Date du fichier</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                  </table>
+                  <input type="submit" class="btn btn-primary btn-block" value="Ouvrir le fichier sélectionné">
+                </ul>
+             
+              </li>
+          </ul>
+          <div class="container-fluid" id="right2">
+            <label for="photo" class="photo"></label>
+            <p></p>
+            <input type="submit" value="..." class="btn btn-primary btn-block" id="bouton">
+            
+            <input type="submit" class="btn btn-primary btn-block"  value="Gestion des congés" id="bou1">
+             <input type="submit" class="btn btn-primary btn-block" value="Historique fiche de poste" id="bou1">
+            <input type="submit" class="btn btn-primary btn-block" value="Historique augmentation" id="bou1">
+            <input type="submit" class="btn btn-primary btn-block" value="Historique crédit" id="bou2">
+            
+            <input type="submit" class="btn btn-primary btn-block" value="Fiche de pointage" id="bou2">
+            <input type="submit" class="btn btn-primary btn-block" value="Historique contrat" id="bou2">
+            <p></p>
+            
+            <form class="form">
+              <label for="" id="titre">Droits d'accès</label>
+            <p></p>
+              <label for="">Fichier :</label>
+              <select name="" id="fi" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+             
+              <label for="">Dossier :</label>
+              <select name="" id="do" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+              
+              <label for="">Structure :</label>
+              <select name="" id="st" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+              
+              <label for="">Employé :</label>
+              <select name="" id="emp" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+              
+              <label for="">Activité :</label>
+              <select name="" id="ac" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+             
+              <label for="">Configuration :</label>
+              <select name="" id="conf" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+             
+              <label for="">Evénement :</label>
+              <select name="" id="ev" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+             
+              <label for="">Doc Word :</label>
+              <select name="" id="docw" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+            
+              <label for="de">Doc Excel :</label>
+              <select name="" id="doce" class="form-control">
+                <option value=""></option>
+                <option value="">Lecture</option>
+                <option value="">Ecriture</option>
+                <option value="">Admin</option>
+              </select>
+              
+              
+                <input class="btn btn-primary btn-block" type="submit" id="bou" value="valider vos données">
+                <input class="btn btn-primary btn-block" type="submit" id="bou" value="actualiser">
+              </form>
+              </div>
+          
+          </div>
+          
+          <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+            
+              <form action="" method="post">
+                
+                  <label for="fenetre">Fenêtre : </label>
+                  <select name="" id="fenetre" class="form-control">
+                    <option value=""></option>
+                    <option value="">ACCUEIL</option>
+                    <option value="">ACTIVE</option>
+                    <option value="">BUREAUTIQUE</option>
+                    <option value="">DOCUMENT_SCANNE</option>
+                    <option value="">EMPLOYE</option>
+                    <option value="">FICHIER</option>
+                    <option value="">OUTLOOK</option>
+                    <option value="">RECHERCHE_RAPIDE</option>
+                    <option value="">STRUCTURE</option>
+                    <option value="">TABLEAU_BORD</option>
+                    <option value="">TACHE</option>
+                  </select>
+                
+                  <input type="radio">
+                  <label for="Employe">Employé :</label>
+                  <select name="" id="select1" class="form-control">
+                    <option value=""></option>
+                  </select>
+                  <label for="">...</label><br>
+                  
+                  <input type="radio">
+                  <label for="">Groupe :</label>
+                  <select name="" id="groupe" class="form-control">
+                    <option value=""></option>
+                  </select>
+                 
+                  <button type="submit" class="fas fa-users" id="btn3"></button>
+                  <label for="">...</label>
+                
+
+                <div class="row">
+                  <div class="col-8">
+                    <div class="icheck-primary">
+                      <input type="checkbox" id="remember">
+                      <label for="remember">
+                        Accès à la fenêtre
+                      </label>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+               
+                  <!-- /.col -->
+                </div>
+             
+              </form>
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>Champ</th>
+                  <th>Type</th>
+                  <th>Accès</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="remember"></td>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+          
+          <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+             
+          </div>
+          
+      </div>
+      <!-- /.card -->
+    </div>
+  </div>
+    
+    
+    
+</section>
+</div>
+<footer class="main-footer">
+    
+    <strong>Copyright &copy; 2024 <a href=""></a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <!-- Notifications -->
+      <li class="nav-item dropdown">
+       <a class="nav-link" data-toggle="dropdown" href="#">
+         <i class="far fa-bell"></i>
+         <span class="badge badge-warning navbar-badge">7</span>
+       </a>
+       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+         <span class="dropdown-item dropdown-header">7 Notifications</span>
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">
+           <i class="fas fa-envelope mr-2"></i> 4 nouveaux messages
+           <span class="float-right text-muted text-sm">3 mins</span>
+         </a>
+         
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">
+           <i class="fas fa-file mr-2"></i> 3 nouveaux rapports
+           <span class="float-right text-muted text-sm">2 jours</span>
+         </a>
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item dropdown-footer">Voir toutes les notifications</a>
+       </div>
+     </li>
+   </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+
+</body>
+</html>

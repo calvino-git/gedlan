@@ -1,0 +1,204 @@
+.card{
+    width: 203%;
+}
+.content-wrapper{
+    background-color: white;
+}
+#bouton{
+    width: 75px;
+}
+#bou1{
+    width: 200px;
+    display: inline;
+    vertical-align: bottom;
+}
+#bou2{
+    width: 200px;
+    display: inline;
+    vertical-align: bottom;
+}
+#bou{
+    width: 180px;
+    display: inline;
+    vertical-align: bottom;
+}
+#bouto{
+    width: 125px;
+    display: inline;
+    vertical-align: bottom;  
+}
+.photo{
+    width: 125px;
+    height: 130px;
+    border: 1px solid rgb(216, 204, 204);
+    border-radius: 5px;
+}
+#left2, #right2{
+    display: inline-block;
+}
+#left2{
+    width: 620px;
+    vertical-align: top;
+}
+#right2{
+    width: 600px;
+    margin-left: 10px;
+}
+#bar{
+    position: fixed;
+    }
+#lien{
+width: 500px;
+    }
+select{
+        width: 250px;
+        height: 30px;
+}
+#fenetre{
+    width: 250px; 
+}
+#g, #d{
+display: inline-block;
+vertical-align: top;
+}
+#g{
+    width: 500px;
+}
+#d{
+    width: 400px;
+}
+#exemple2{
+    width: 400px;
+   margin-bottom: 37px;
+}
+#table{
+    width: 450px;
+}
+
+#exemple3{
+    width: 700px;
+}
+
+#desc{
+    width: 250px;
+}
+#df{
+    width: 188px;
+}
+ #cadre{
+    width: 400px;
+    height: 500px;
+    border: 0.5px solid rgb(241, 239, 239);
+  
+ }
+#gau, #fichier{
+    display: inline-block;
+}
+#fichier{
+    margin-left: 40px;
+}
+#gau{
+    vertical-align: top;
+}
+#titre{
+    text-align: center;
+    color: rgb(16, 138, 238);
+}
+
+#dac{
+    width: 250px;
+}
+#left, #right{
+display: inline-block;
+}
+#right{
+    margin-left: 25px;
+    width: 500px;
+}
+#left{
+    vertical-align: top;
+}
+#Grid{
+    height: 800px;
+}
+#zone, #zone1{
+    width: 200px;
+}
+#ps{
+    width: 200px;
+}
+#nv{
+    width: 200px;
+}
+#ttp{
+    width: 200px;
+}
+#mac{
+    width: 200px;
+}
+#sab{
+    width: 200px;
+}
+#ech{
+    width: 200px;
+}
+#tc{
+    width: 200px;
+}
+#dfp{
+    width: 200px;
+}
+#dae{
+    width: 200px;
+}
+#ded{
+    width: 200px;
+}
+#ser{
+    width: 200px;
+}
+#tf{
+    width: 200px;
+}
+#fo{
+    width: 200px;
+}
+#mdp{
+    width: 200px;
+}
+#ad{
+    width: 200px;
+}
+#noe{
+    width: 200px;
+}
+#stm{
+    width: 200px;
+}
+#dan{
+    width: 200px;
+}
+#pr{
+    width: 200px;
+}
+#no{
+    width: 200px;
+}
+#mat{
+    width: 200px;
+}
+#tel{
+    width: 200px;
+}
+#ema{
+    width: 200px;
+}
+#log{
+    width: 200px;
+}
+#ad{
+    width: 200px;   
+}
+.form-control{
+    width: 250px;
+}

@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GedLan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- css de modification -->
+<link rel="stylesheet" href="../css/style1.css">
+<!-- css de modification -->
+<link rel="stylesheet" href="../css/activite.css">
+<!-- SweetAlert2 -->
+<link rel="stylesheet" href="../../plugins/sweetalert2/sweetalert2.min.css">
+<!-- Toastr -->
+<link rel="stylesheet" href="../../plugins/toastr/toastr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+</head>
+
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../connexion.html">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      
+      <div class="float-right d-none d-sm-inline-block">
+        <!-- Notifications -->
+        <li class="nav-item dropdown">
+         <a class="nav-link" data-toggle="dropdown" href="#">
+           <i class="nav-icon fas fa-ellipsis-h"></i>
+         </a>
+         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+           <div class="dropdown-divider"></div>
+           <a href="#" class="dropdown-item">
+            Configurer le serveur mail
+             
+           </a>
+           
+           <div class="dropdown-divider"></div>
+           <a href="#" class="dropdown-item">
+            Changer de thème
+           </a>
+         </div>
+       </li>
+     </div>
+          
+        </div>
+      
+      
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" id="bar">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">GedLan</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nom utilisateur</a>
+        </div>
+      </div>
+
+      
+
+     <!-- Sidebar Menu -->
+     <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" id="onglets">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item menu-open">
+          <a href="../structure.html" class="nav-link active" title="Création et édition des services ou départements">
+            <i class="nav-icon fas fa-building"></i>
+            <p>
+              Gérer votre structure
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="employés.html" class="nav-link" title="Gestion des employés et configuration des droits d'accès sur l'application">
+            <i class=" nav-icon fas fa-users"  id="employés"></i>
+            <p>
+               Gestion des employés
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="activite.html" class="nav-link">
+            <i class="nav-icon fas fa-address-card"></i>
+            <p>
+              Mes activités
+            </p>
+          </a>
+          
+        
+        </li>
+        <li class="nav-item">
+          <a href="fichier.html" class="nav-link">
+            <i class="nav-icon fas fa-copy"></i>
+            <p>
+              Gestion de fichiers
+            </p>
+          </a>
+
+        </li>
+        <li class="nav-item">
+          <a href="tache.html" class="nav-link">
+            <i class="nav-icon fas fa-tasks"></i>
+            <p>
+              Gestion de tâches
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="../tableau.html" class="nav-link">
+            <i class="nav-icon fas fa-chart-line"></i>
+            <p>
+              Tableau de bord
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="recherche.html" class="nav-link">
+            <i class="nav-icon fas fa-search"></i>
+            <p>
+              Recherche rapide
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="scanne.html" class="nav-link" title="Visionner l'activité ou les mouvements de tous les utilisateurs de l'application">
+            <i class="nav-icon fas fa-file-alt"></i>
+            <p>
+              Documents scannés
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <div class="float-right d-none d-sm-inline-block">
+            <!-- Notifications -->
+            <li class="nav-item dropdown">
+             <a class="nav-link" data-toggle="dropdown" href="#" title="Editer vos fichers words et vos tableurs">
+               <i class="nav-icon fas fa-plus"></i><p>
+                Bureautique
+              </p>
+             </a>
+             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> Traitement de texte
+              </a>
+               <div class="dropdown-divider"></div>
+               <a href="#" class="dropdown-item">
+                 <i class="fas fa-envelope mr-2"></i> Tableur Excel
+               </a>
+               
+               <div class="dropdown-divider"></div>
+               <a href="#" class="dropdown-item">
+                 <i class="fas fa-file mr-2"></i> Envoi de mail
+               </a>
+               <div class="dropdown-divider"></div>
+               </div>
+             </li>
+           </div>
+          </li>
+          
+           
+        </ul>
+      </nav>
+    <!-- /bar de menu de gauche-->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+<div class="content-wrapper">
+        <section class="content">
+          <div class="col-12 col-sm-6">
+            <div class="card card-primary card-outline card-outline-tabs">
+              <div class="card-header p-0 border-bottom-0">
+                <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist" id="onglet">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Identification</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Mon agenda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Mes fichiers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Mes brouillons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings1" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Mes tâches</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings2" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Mes activités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings3" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Editer mon agenda</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="custom-tabs-four-tabContent">
+                  <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                    <form action="">
+                      <p class="card-text">
+                        <div class="container-fluid">
+                          <label for="photo" class="photo"></label>
+                          <p></p>
+                          <input type="submit" value="..." class="btn btn-primary btn-block" id="btn">
+                          <p></p>
+                          <form class="form">
+                            <div class="col1">
+                            <label for="">Matricule :</label>
+                            <input type="text" id="ma" class="form-control">
+                           
+                            <label for="">Nom :</label>
+                            <input type="text" id="no" class="form-control">
+                           
+                            <label for="">Prénom(s) :</label>
+                            <input type="text" id="pr" class="form-control">
+                            
+                            <label for="">Date nais. :</label>
+                            <input type="text" id="dn" class="form-control">
+                           
+                            <label for="">Adresse :</label>
+                            <input type="text" id="ad" class="form-control">
+                            
+                          </div>
+                          <div class="col2">
+                            <label for="">Fonction :</label>
+                            <input type="text" id="fo" class="form-control">
+                            
+                            <label for="">Service :</label>
+                            <input type="text" id="sr" class="form-control">
+                           
+                            <label for="">Dépend de :</label>
+                            <input type="text" id="dd" class="form-control">
+                            
+                            <label for="">Date d'embauche :</label>
+                            <input type="text" id="de" class="form-control">
+                            
+                            <label for="">Date fin probation :</label>
+                            <input type="text" id="dfp" class="form-control">
+                            
+                          </div>
+                          <div class="col3">
+                            <label for="">Tel perso. :</label>
+                            <input type="text" id="tp" class="form-control">
+                            
+                            <label for="">Email :</label>
+                            <input type="text" id="em" class="form-control">
+                            
+                            <label for="">Login :</label>
+                            <input type="text" id="lo" class="form-control">
+                          
+                            <label for="">Mot de passe :</label>
+                            <input type="password" id="mp" class="form-control">
+                            <p></p>
+                            <p></p>
+                              <input class="btn btn-primary btn-block" type="submit" value="valider la mise à jour">
+                            </div>
+                            </form>
+                            </div>
+                      </p>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                      <div id="calendar" class="fc fc-media-screen fc-direction-ltr fc-theme-standard fc-liquid-hack"><div class="fc-header-toolbar fc-toolbar fc-toolbar-ltr">
+                        <div class="fc-toolbar-chunk"><div class="fc-button-group"><button type="button" title="Previous month" aria-pressed="false" class="fc-prev-button fc-button fc-button-primary"><span class="fc-icon fc-icon-chevron-left" role="img"></span></button><button type="button" title="Next month" aria-pressed="false" class="fc-next-button fc-button fc-button-primary"><span class="fc-icon fc-icon-chevron-right" role="img"></span></button></div><button type="button" title="This month" aria-pressed="false" class="fc-today-button fc-button fc-button-primary" _msttexthash="1659645" _msthash="3">Aujourd’hui</button></div><div class="fc-toolbar-chunk"><h2 class="fc-toolbar-title" id="fc-dom-1" _msttexthash="157053" _msthash="4">Novembre 2024</h2></div><div class="fc-toolbar-chunk"><div class="fc-button-group"><button type="button" title="month view" aria-pressed="true" class="fc-dayGridMonth-button fc-button fc-button-primary fc-button-active" _msttexthash="48698" _msthash="5">mois</button>
+                        <button type="button" title="week view" aria-pressed="false" class="fc-timeGridWeek-button fc-button fc-button-primary" _msttexthash="95576" _msthash="6">semaine</button><button type="button" title="day view" aria-pressed="false" class="fc-timeGridDay-button fc-button fc-button-primary" _msttexthash="49699" _msthash="7">jour</button></div></div></div><div aria-labelledby="fc-dom-1" class="fc-view-harness fc-view-harness-active" style="height: 688.148px;"><div class="fc-dayGridMonth-view fc-view fc-daygrid"><table role="grid" class="fc-scrollgrid  fc-scrollgrid-liquid"><thead role="rowgroup"><tr role="presentation" class="fc-scrollgrid-section fc-scrollgrid-section-header "><th role="presentation"><div class="fc-scroller-harness"><div class="fc-scroller" style="overflow: hidden;"><table role="presentation" class="fc-col-header " style="width: 927px;"><colgroup></colgroup><thead role="presentation"><tr role="row"><th role="columnheader" class="fc-col-header-cell fc-day fc-day-sun"><div class="fc-scrollgrid-sync-inner"><a aria-label="Dimanche" class="fc-col-header-cell-cushion" _mstaria-label="78338" _msthash="8" _msttexthash="76726">Dim</a></div></th><th role="columnheader" class="fc-col-header-cell fc-day fc-day-mon"><div class="fc-scrollgrid-sync-inner"><a aria-label="Lundi" class="fc-col-header-cell-cushion" _mstaria-label="77168" _msthash="9" _msttexthash="31954">Lun</a></div></th><th role="columnheader" class="fc-col-header-cell fc-day fc-day-tue"><div class="fc-scrollgrid-sync-inner"><a aria-label="Mardi" class="fc-col-header-cell-cushion" _mstaria-label="96460" _msthash="10" _msttexthash="30433">Mar</a></div></th><th role="columnheader" class="fc-col-header-cell fc-day fc-day-wed"><div class="fc-scrollgrid-sync-inner"><a aria-label="Mercredi" class="fc-col-header-cell-cushion" _mstaria-label="134953" _msthash="11" _msttexthash="76310">Mer</a></div></th><th role="columnheader" class="fc-col-header-cell fc-day fc-day-thu"><div class="fc-scrollgrid-sync-inner"><a aria-label="Jeudi" class="fc-col-header-cell-cushion" _mstaria-label="117429" _msthash="12" _msttexthash="33839">jeu</a></div></th><th role="columnheader" class="fc-col-header-cell fc-day fc-day-fri"><div class="fc-scrollgrid-sync-inner"><a aria-label="Vendredi" class="fc-col-header-cell-cushion" _mstaria-label="76258" _msthash="13" _msttexthash="31200">Ven</a></div></th><th role="columnheader" class="fc-col-header-cell fc-day fc-day-sat"><div class="fc-scrollgrid-sync-inner"><a aria-label="Samedi" class="fc-col-header-cell-cushion" _mstaria-label="116740" _msthash="14" _msttexthash="30394">Sam</a></div></th></tr></thead></table></div></div></th></tr></thead><tbody role="rowgroup"><tr role="presentation" class="fc-scrollgrid-section fc-scrollgrid-section-body  fc-scrollgrid-section-liquid"><td role="presentation"><div class="fc-scroller-harness fc-scroller-harness-liquid"><div class="fc-scroller fc-scroller-liquid-absolute" style="overflow: hidden auto;"><div class="fc-daygrid-body fc-daygrid-body-unbalanced " style="width: 927px;"><table role="presentation" class="fc-scrollgrid-sync-table" style="width: 927px; height: 665px;"><colgroup></colgroup><tbody role="presentation"><tr role="row"><td aria-labelledby="fc-dom-142" role="gridcell" data-date="2024-09-29" class="fc-day fc-day-sun fc-day-past fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="29 septembre 2024" id="fc-dom-142" class="fc-daygrid-day-number" _mstaria-label="221507" _msthash="137" _msttexthash="10478">29</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-144" role="gridcell" data-date="2024-09-30" class="fc-day fc-day-mon fc-day-past fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="30 septembre 2024" id="fc-dom-144" class="fc-daygrid-day-number" _mstaria-label="219726" _msthash="138" _msttexthash="9633">30</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-146" role="gridcell" data-date="2024-10-01" class="fc-day fc-day-tue fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="1er octobre 2024" id="fc-dom-146" class="fc-daygrid-day-number" _mstaria-label="157573" _msthash="139" _msttexthash="4459">1</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-block-event fc-h-event"><div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky" _msttexthash="655837" _msthash="115">Événement toute la journée</div></div></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-148" role="gridcell" data-date="2024-10-02" class="fc-day fc-day-wed fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="2 octobre 2024" id="fc-dom-148" class="fc-daygrid-day-number" _mstaria-label="157755" _msthash="140" _msttexthash="4550">2</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-150" role="gridcell" data-date="2024-10-03" class="fc-day fc-day-thu fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="3 octobre 2024" id="fc-dom-150" class="fc-daygrid-day-number" _mstaria-label="157937" _msthash="141" _msttexthash="4641">3</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-152" role="gridcell" data-date="2024-10-04" class="fc-day fc-day-fri fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="4 octobre 2024" id="fc-dom-152" class="fc-daygrid-day-number" _mstaria-label="158119" _msthash="142" _msttexthash="4732">4</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-154" role="gridcell" data-date="2024-10-05" class="fc-day fc-day-sat fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="5 octobre 2024" id="fc-dom-154" class="fc-daygrid-day-number" _mstaria-label="158301" _msthash="143" _msttexthash="4823">5</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr><tr role="row"><td aria-labelledby="fc-dom-156" role="gridcell" data-date="2024-10-06" class="fc-day fc-day-sun fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="6 octobre 2024" id="fc-dom-156" class="fc-daygrid-day-number" _mstaria-label="158483" _msthash="130" _msttexthash="4914">6</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-158" role="gridcell" data-date="2024-10-07" class="fc-day fc-day-mon fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="7 octobre 2024" id="fc-dom-158" class="fc-daygrid-day-number" _mstaria-label="158665" _msthash="131" _msttexthash="5005">7</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="top: 0px; left: 0px; right: -264.844px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-block-event fc-h-event"><div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky" _msttexthash="261456" _msthash="114">Événement long</div></div></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 19px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-160" role="gridcell" data-date="2024-10-08" class="fc-day fc-day-tue fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="8 octobre 2024" id="fc-dom-160" class="fc-daygrid-day-number" _mstaria-label="158847" _msthash="132" _msttexthash="5096">8</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 19px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-162" role="gridcell" data-date="2024-10-09" class="fc-day fc-day-wed fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="9 octobre 2024" id="fc-dom-162" class="fc-daygrid-day-number" _mstaria-label="159029" _msthash="133" _msttexthash="5187">9</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 19px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-dot-event"><div class="fc-daygrid-event-dot"></div><div class="fc-event-time" _msttexthash="16380" _msthash="112">4p</div><div class="fc-event-title" _msttexthash="477464" _msthash="113">Événement répétitif</div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-164" role="gridcell" data-date="2024-10-10" class="fc-day fc-day-thu fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="10 octobre 2024" id="fc-dom-164" class="fc-daygrid-day-number" _mstaria-label="170105" _msthash="134" _msttexthash="9451">10</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-166" role="gridcell" data-date="2024-10-11" class="fc-day fc-day-fri fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="11 octobre 2024" id="fc-dom-166" class="fc-daygrid-day-number" _mstaria-label="170300" _msthash="135" _msttexthash="9555">11</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="top: 0px; left: 0px; right: -132.969px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-block-event fc-h-event"><div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky" _msttexthash="172276" _msthash="111">Conférence</div></div></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 19px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-168" role="gridcell" data-date="2024-10-12" class="fc-day fc-day-sat fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="12 octobre 2024" id="fc-dom-168" class="fc-daygrid-day-number" _mstaria-label="170495" _msthash="136" _msttexthash="9659">12</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 19px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-dot-event"><div class="fc-daygrid-event-dot"></div><div class="fc-event-time" _msttexthash="35113" _msthash="109">10 h 30</div><div class="fc-event-title" _msttexthash="110604" _msthash="110">Réunion</div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-dot-event"><div class="fc-daygrid-event-dot"></div><div class="fc-event-time" _msttexthash="22763" _msthash="107">12p</div><div class="fc-event-title" _msttexthash="127660" _msthash="108">Déjeuner</div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-dot-event"><div class="fc-daygrid-event-dot"></div><div class="fc-event-time" _msttexthash="35529" _msthash="105">14 h 30</div><div class="fc-event-title" _msttexthash="110604" _msthash="106">Réunion</div></a></div>
+                          <div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr><tr role="row"><td aria-labelledby="fc-dom-170" role="gridcell" data-date="2024-10-13" class="fc-day fc-day-sun fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="13 octobre 2024" id="fc-dom-170" class="fc-daygrid-day-number" _mstaria-label="170690" _msthash="123" _msttexthash="9763">13</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-dot-event"><div class="fc-daygrid-event-dot"></div><div class="fc-event-time" _msttexthash="15093" _msthash="103">7a</div><div class="fc-event-title" _msttexthash="387374" _msthash="104">Fête d'anniversaire</div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-172" role="gridcell" data-date="2024-10-14" class="fc-day fc-day-mon fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="14 octobre 2024" id="fc-dom-172" class="fc-daygrid-day-number" _mstaria-label="170885" _msthash="124" _msttexthash="9867">14</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-174" role="gridcell" data-date="2024-10-15" class="fc-day fc-day-tue fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="15 octobre 2024" id="fc-dom-174" class="fc-daygrid-day-number" _mstaria-label="171080" _msthash="125" _msttexthash="9971">15</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-176" role="gridcell" data-date="2024-10-16" class="fc-day fc-day-wed fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="16 octobre 2024" id="fc-dom-176" class="fc-daygrid-day-number" _mstaria-label="171275" _msthash="126" _msttexthash="10075">16</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-dot-event"><div class="fc-daygrid-event-dot"></div><div class="fc-event-time" _msttexthash="16380" _msthash="101">4p</div><div class="fc-event-title" _msttexthash="477464" _msthash="102">Événement répétitif</div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-178" role="gridcell" data-date="2024-10-17" class="fc-day fc-day-thu fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="17 octobre 2024" id="fc-dom-178" class="fc-daygrid-day-number" _mstaria-label="171470" _msthash="127" _msttexthash="10179">17</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-180" role="gridcell" data-date="2024-10-18" class="fc-day fc-day-fri fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="18 octobre 2024" id="fc-dom-180" class="fc-daygrid-day-number" _mstaria-label="171665" _msthash="128" _msttexthash="10283">18</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div>
+                  <div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-182" role="gridcell" data-date="2024-10-19" class="fc-day fc-day-sat fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="19 octobre 2024" id="fc-dom-182" class="fc-daygrid-day-number" _mstaria-label="171860" _msthash="129" _msttexthash="10387">19</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr><tr role="row"><td aria-labelledby="fc-dom-184" role="gridcell" data-date="2024-10-20" class="fc-day fc-day-sun fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="20 octobre 2024" id="fc-dom-184" class="fc-daygrid-day-number" _mstaria-label="170287" _msthash="116" _msttexthash="9542">20</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-186" role="gridcell" data-date="2024-11-01" class="fc-day fc-day-mon fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="21 octobre 2024" id="fc-dom-186" class="fc-daygrid-day-number" _mstaria-label="170482" _msthash="117" _msttexthash="9646">21</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-188" role="gridcell" data-date="2024-10-22" class="fc-day fc-day-tue fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="22 octobre 2024" id="fc-dom-188" class="fc-daygrid-day-number" _mstaria-label="170677" _msthash="118" _msttexthash="9750">22</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-190" role="gridcell" data-date="2024-10-23" class="fc-day fc-day-wed fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="01 Novembre 2024" id="fc-dom-190" class="fc-daygrid-day-number" _mstaria-label="170872" _msthash="119" _msttexthash="9854">23</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-192" role="gridcell" data-date="2024-10-24" class="fc-day fc-day-thu fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="24 octobre 2024" id="fc-dom-192" class="fc-daygrid-day-number" _mstaria-label="171067" _msthash="120" _msttexthash="9958">24</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-194" role="gridcell" data-date="2024-10-25" class="fc-day fc-day-fri fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="25 octobre 2024" id="fc-dom-194" class="fc-daygrid-day-number" _mstaria-label="171262" _msthash="121" _msttexthash="10062">25</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-196" role="gridcell" data-date="2024-10-26" class="fc-day fc-day-sat fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="26 octobre 2024" id="fc-dom-196" class="fc-daygrid-day-number" _mstaria-label="171457" _msthash="122" _msttexthash="10166">26</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr><tr role="row"><td aria-labelledby="fc-dom-58" role="gridcell" data-date="2024-10-27" class="fc-day fc-day-sun fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="27 octobre 2024" id="fc-dom-58" class="fc-daygrid-day-number" _mstaria-label="172588" _msthash="58" _msttexthash="10270">27</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-60" role="gridcell" data-date="2024-10-28" class="fc-day fc-day-mon fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="28 octobre 2024" id="fc-dom-60" class="fc-daygrid-day-number" _mstaria-label="172692" _msthash="59" _msttexthash="10374">28</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a href="" class="fc-event fc-event-start fc-event-end fc-event-past fc-daygrid-event fc-daygrid-block-event fc-h-event"><div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky" _msttexthash="351065" _msthash="60">Cliquez pour Google</div></div></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-62" role="gridcell" data-date="2024-10-29" class="fc-day fc-day-tue fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="29 octobre 2024" id="fc-dom-62" class="fc-daygrid-day-number" _mstaria-label="172796" _msthash="61" _msttexthash="10478">29</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-64" role="gridcell" data-date="2024-10-30" class="fc-day fc-day-wed fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="30 octobre 2024" id="fc-dom-64" class="fc-daygrid-day-number" _mstaria-label="171951" _msthash="62" _msttexthash="9633">30</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-66" role="gridcell" data-date="2024-10-31" class="fc-day fc-day-thu fc-day-past fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="31 octobre 2024" id="fc-dom-66" class="fc-daygrid-day-number" _mstaria-label="172055" _msthash="63" _msttexthash="9737">31</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-68" role="gridcell" data-date="2024-11-01" class="fc-day fc-day-fri fc-day-today fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="1 novembre 2024" id="fc-dom-68" class="fc-daygrid-day-number" _mstaria-label="178230" _msthash="64" _msttexthash="4459">1</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-70" role="gridcell" data-date="2024-11-02" class="fc-day fc-day-sat fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="2 novembre 2024" id="fc-dom-70" class="fc-daygrid-day-number" _mstaria-label="178321" _msthash="65" _msttexthash="4550">2</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr><tr role="row"><td aria-labelledby="fc-dom-72" role="gridcell" data-date="2024-11-03" class="fc-day fc-day-sun fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="3 novembre 2024" id="fc-dom-72" class="fc-daygrid-day-number" _mstaria-label="178412" _msthash="66" _msttexthash="4641">3</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-74" role="gridcell" data-date="2024-11-04" class="fc-day fc-day-mon fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="4 novembre 2024" id="fc-dom-74" class="fc-daygrid-day-number" _mstaria-label="178503" _msthash="67" _msttexthash="4732">4</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-76" role="gridcell" data-date="2024-11-05" class="fc-day fc-day-tue fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="5 novembre 2024" id="fc-dom-76" class="fc-daygrid-day-number" _mstaria-label="178594" _msthash="68" _msttexthash="4823">5</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-78" role="gridcell" data-date="2024-11-06" class="fc-day fc-day-wed fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="6 novembre 2024" id="fc-dom-78" class="fc-daygrid-day-number" _mstaria-label="178685" _msthash="69" _msttexthash="4914">6</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-80" role="gridcell" data-date="2024-11-07" class="fc-day fc-day-thu fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="7 novembre 2024" id="fc-dom-80" class="fc-daygrid-day-number" _mstaria-label="178776" _msthash="70" _msttexthash="5005">7</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-82" role="gridcell" data-date="2024-11-08" class="fc-day fc-day-fri fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="8 novembre 2024" id="fc-dom-82" class="fc-daygrid-day-number" _mstaria-label="178867" _msthash="71" _msttexthash="5096">8</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td><td aria-labelledby="fc-dom-84" role="gridcell" data-date="2024-11-09" class="fc-day fc-day-sat fc-day-future fc-day-other fc-daygrid-day"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a aria-label="9 novembre 2024" id="fc-dom-84" class="fc-daygrid-day-number" _mstaria-label="178958" _msthash="72" _msttexthash="5187">9</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr></tbody></table></div></div></div></td></tr></tbody></table></div></div></div>
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                          <th>Fichier</th>
+                          <th>Description</th>
+                          <th>Mot clé</th>
+                          <th>Dossier</th>
+                          <th>Date du fichier</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <input type="submit" class="btn btn-primary btn-block" value="Ouvrir le fichier sélectionné">
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                          <th>Fichier</th>
+                          <th>Date du fichier</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div id="large">
+                        <button type="submit" class="btn btn-primary btn-block" id="bout">Nouveau fichier</button>
+                       <button type="submit" class="btn btn-primary btn-block" id="bout">Ouvrir le fichier</button>
+                        <button type="submit" class="btn btn-primary btn-block" id="bout">Envoyer le fichier</button>
+                        <button type="submit" class="btn btn-primary btn-block" id="bout">Supprimer</button>
+                      </div>
+                      </div>
+                      <div class="tab-pane fade" id="custom-tabs-four-settings1" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                        <div class="col-4">
+                          <form action="">
+                           
+                            <label for="">Catégorie :</label> <select name="" id="cat"  class="form-control">
+                              <option value=""></option>
+                            </select>
+                            
+                            <label for="">Désignation :</label> <input type="text" id="desi" class="form-control">
+                          
+                            <label for="">Description :</label> <textarea name="" id="desc" class="form-control"></textarea>
+                          
+                            <label for="">Date début :</label> <input type="date" id="dad" class="form-control">
+                           
+                            <label for="">Date fin :</label> <input type="date" id="df" class="form-control">
+                             
+                            <label for="">Statut :</label> <select name="" id="st" class="form-control">
+                              <option value=""></option>
+                              <option value="">En attente</option>
+                              <option value="">En cours</option>
+                              <option value="">Validée</option>
+                              <option value="">Annulée</option>
+                              <option value="">En retard</option>
+                            </select>
+                            <p></p>
+                          </form>
+                        </div>
+                         
+                            <div id="droite" >
+                              <button type="submit" class="btn btn-primary btn-block">...</button>
+                          <button type="submit" class="btn btn-primary btn-block">...</button>
+                          <button type="submit" class="btn btn-primary btn-block">...</button>
+                          <p></p>
+                          <label for=""> <i class="nav-icon fas fa-user"></i> attribuer par :</label>
+                          <button type="submit" class="btn btn-primary btn-block">valider</button>
+                            </div>
+                         
+                        <table id="example2" class="table table-bordered table-hover" style="min-width: 200px">
+                            <thead>
+                            <tr>
+                              <th>Catégorie</th>
+                              <th>Désignation</th>
+                              <th>Desc.</th>
+                              <th>Date création</th>
+                              <th>Date fin</th>
+                              <th>Statut</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                      </tbody>
+                          </table>
+                          </div>
+                          <div class="tab-pane fade" id="custom-tabs-four-settings2" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                            <table id="example2" class="table table-bordered table-hover">
+                              <thead>
+                              <tr>
+                                <th>Date</th>
+                                <th>Heure</th>
+                                <th>Activité</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              </tbody>
+                            </table>
+                           </div>
+
+                              
+                              <div class="tab-pane fade" id="custom-tabs-four-settings3" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                                
+                               <form action="" id="g">
+                                <label for="">Titre :</label>
+                                <input type="text" id="ti" class="form-control">
+                                
+                                <label for="">Date début : </label>
+                                <input type="date" name="" id="dated" class="form-control">
+                                
+                                <label for="">Heure début : </label>
+                                <input type="time" name="" id="hd" class="form-control">
+                                
+                                <label for="">Date fin : </label>
+                                <input type="date" name="" id="datef" class="form-control">
+                               
+                                <label for="">Heure fin : </label>
+                                <input type="time" name="" id="hf" class="form-control">
+                                <p></p>
+                               </form>
+                               <section id="d">
+                                
+                                <table id="example2" class="table table-bordered table-hover">
+                                  <thead>
+                                  <tr>
+                                    <th>Titre</th>
+                                    <th>Date début</th>
+                                    <th>Date fin</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  </tfoot>
+                                </table>
+                                
+                              </section>
+                               <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                  <th>Matricule</th>
+                                  <th>Nom</th>
+                                  <th>Prénom</th>
+                                  <th>Structure</th>
+                                  <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td><td></td>
+                                    <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td><td></td>
+                                    <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td><td></td>
+                                    <td></td>
+                                    <td><input type="checkbox" id="remember"></td>
+                                </tr>
+                                </tfoot>
+                              </table>
+                              <input type="submit" value="Ajouter à mon planing" class="btn btn-primary btn-block">
+                            
+                          
+                                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+          
+        </section>
+      </div>
+    
+
+<footer class="main-footer">
+    
+    <strong>Copyright &copy; 2024 <a href=""></a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <!-- Notifications -->
+      <li class="nav-item dropdown">
+       <a class="nav-link" data-toggle="dropdown" href="#">
+         <i class="far fa-bell"></i>
+         <span class="badge badge-warning navbar-badge">7</span>
+       </a>
+       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+         <span class="dropdown-item dropdown-header">7 Notifications</span>
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">
+           <i class="fas fa-envelope mr-2"></i> 4 nouveaux messages
+           <span class="float-right text-muted text-sm">3 mins</span>
+         </a>
+         
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">
+           <i class="fas fa-file mr-2"></i> 3 nouveaux rapports
+           <span class="float-right text-muted text-sm">2 jours</span>
+         </a>
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item dropdown-footer">Voir toutes les notifications</a>
+       </div>
+     </li>
+   </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery UI -->
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- fullCalendar 2.2.5 -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/fullcalendar/main.js"></script>
+<style>
+
+
+  #calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    height: 700px;
+  }
+
+</style>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      initialDate: '2024-10-07',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
+    });
+
+    calendar.render();
+  });
+
+</script>
+</body>
+</html>

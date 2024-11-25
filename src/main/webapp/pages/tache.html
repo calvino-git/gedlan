@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GedLan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+<!-- css de modification -->
+<link rel="stylesheet" href="../css/tache.css">
+
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../connexion.html">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <div class="float-right d-none d-sm-inline-block">
+        <!-- Notifications -->
+        <li class="nav-item dropdown">
+         <a class="nav-link" data-toggle="dropdown" href="#">
+           <i class="nav-icon fas fa-ellipsis-h"></i>
+         </a>
+         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+           <div class="dropdown-divider"></div>
+           <a href="#" class="dropdown-item">
+            Configurer le serveur mail
+             
+           </a>
+           
+           <div class="dropdown-divider"></div>
+           <a href="#" class="dropdown-item">
+            Changer de thème
+           </a>
+         </div>
+       </li>
+     </div>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" id="bar">
+    <!-- Brand Logo -->
+    <a href="../index3.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">GedLan</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nom utilisateur</a>
+        </div>
+      </div>
+
+      
+
+     <!-- Sidebar Menu -->
+     <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" id="onglets">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item menu-open">
+          <a href="../structure.html" class="nav-link active" title="Création et édition des services ou départements">
+            <i class="nav-icon fas fa-building"></i>
+            <p>
+              Gérer votre structure
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/employés.html" class="nav-link" title="Gestion des employés et configuration des droits d'accès sur l'application">
+            <i class=" nav-icon fas fa-users"  id="employés"></i>
+            <p>
+               Gestion des employés
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="activite.html" class="nav-link" title="Visionner l'activité ou les mouvements de tous les utilisateurs du système">
+            <i class="nav-icon fas fa-address-card"></i>
+            <p>
+              Mes activités
+            </p>
+          </a>
+          
+        
+        </li>
+        <li class="nav-item">
+          <a href="fichier.html" class="nav-link" title="Gestion structurelle des fichiers archivés">
+            <i class="nav-icon fas fa-copy"></i>
+            <p>
+              Gestion de fichiers
+            </p>
+          </a>
+
+        </li>
+        <li class="nav-item">
+          <a href="tache.html" class="nav-link" title="Mise en place et Gestion d'événements ou des tâches">
+            <i class="nav-icon fas fa-tasks"></i>
+            <p>
+              Gestion de tâches
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="../tableau.html" class="nav-link" title="Consulter les statistiques d'utilisation de fichiers, documents, et autres">
+            <i class="nav-icon fas fa-chart-line"></i>
+            <p>
+              Tableau de bord
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="recherche.html" class="nav-link" title="Rechercher vos fichiers">
+            <i class="nav-icon fas fa-search"></i>
+            <p>
+              Recherche rapide
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="scanne.html" class="nav-link" title="Scanner vos documents">
+            <i class="nav-icon fas fa-file-alt"></i>
+            <p>
+              Documents scannés
+            </p>
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <div class="float-right d-none d-sm-inline-block">
+            <!-- Notifications -->
+            <li class="nav-item dropdown">
+             <a class="nav-link" data-toggle="dropdown" href="#" title="Editer vos fichers words et vos tableurs">
+               <i class="nav-icon fas fa-plus"></i><p>
+                Bureautique
+              </p>
+             </a>
+             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> Traitement de texte
+              </a>
+               <div class="dropdown-divider"></div>
+               <a href="#" class="dropdown-item">
+                 <i class="fas fa-envelope mr-2"></i> Tableur Excel
+               </a>
+               
+               <div class="dropdown-divider"></div>
+               <a href="#" class="dropdown-item">
+                 <i class="fas fa-file mr-2"></i> Envoi de mail
+               </a>
+               <div class="dropdown-divider"></div>
+               </div>
+             </li>
+           </div>
+          </li>
+          
+           
+        </ul>
+      </nav>
+    <!-- /bar de menu de gauche-->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+<div class="content-wrapper">
+<section class="content">
+  <!-- Main content -->
+ 
+      
+          
+
+                
+                  <div id="left1">
+                  <form class="form">
+                    
+                    <label for="rs">Catégorie :</label>
+                    <select name="" id="cat" class="form-control">
+                      <option value=""></option>
+                    </select><input type="submit" value="+">
+                    <p></p>
+                    <label for="rs">Désignation :</label>
+                    <textarea name="" id="desi" class="form-control"></textarea>
+                    
+                    <label for="rs">Description :</label>
+                    <input type="text" id="desc" class="form-control">
+                    
+                    <label for="rs">Date début :</label>
+                    <input type="date" id="dd" class="form-control">
+                   
+                    <label for="rs">Date fin :</label>
+                    <input type="date" id="df" class="form-control">
+                  
+                    <label for="rs">Statut :</label>
+                    <select name="" id="st" class="form-control">
+                      <option value="">En attente</option>
+                      <option value="">En cours</option>
+                      <option value="">Validée</option>
+                      <option value="">Annulée</option>
+                      <option value="">En retard</option>
+                    </select>
+                    <p></p>
+                  </div>
+                  <div id="centre">
+                      <input class="btn1" type="submit" value="..."> <label for="">Pièce jointe 1</label>
+                      <p></p>
+                      <input class="btn2" type="submit" value="..."> <label for="">Pièce jointe 2</label>
+                      <p></p>
+                      <input class="btn2" type="submit" value="..."> <label for="">Pièce jointe 3</label>
+                      <p></p>
+                      <i class="fas fa-user"></i> <label for="" id="titre">Attribuer par :</label>
+                      <p></p>
+                    </div>
+                    <div id="right">
+                      <label for="" id="titre">Employés concernés</label>
+                      <p></p>
+
+                      
+                    </form>
+                    <p></p>
+                    <p></p>
+                    <table id="example1" class="table table-bordered table-hover" >
+                      <thead>
+                      <tr>
+                        <th>Matricule</th>
+                        <th>Non</th>
+                        <th>Prénom</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      </tfoot>
+                    </table>
+                    <p></p>
+                    <p></p>
+                    <input type="text" id="affichage" class="form-control">
+                  </div>
+                  <p></p>
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                          <th>Catégorie</th>
+                          <th>Désignation</th>
+                          <th>Description</th>
+                          <th>Date création</th>
+                          <th>Date fin</th>
+                          <th>Statut</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tfoot>
+                      </table>
+                      <input type="submit" id="bouton" value="Valider vos données" class="btn btn-primary btn-block">
+                      <input type="submit" id="bouton" value="Actualiser" class="btn btn-primary btn-block">
+                      <input type="submit" id="bouton" value="Supprimer" class="btn btn-primary btn-block">
+
+</section>
+</div>
+
+  
+
+  <footer class="main-footer">
+    
+    <strong>Copyright &copy; 2024 <a href="#"></a></strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <!-- Notifications -->
+      <li class="nav-item dropdown">
+       <a class="nav-link" data-toggle="dropdown" href="#">
+         <i class="far fa-bell"></i>
+         <span class="badge badge-warning navbar-badge">7</span>
+       </a>
+       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+         <span class="dropdown-item dropdown-header">7 Notifications</span>
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">
+           <i class="fas fa-envelope mr-2"></i> 4 nouveaux messages
+           <span class="float-right text-muted text-sm">3 mins</span>
+         </a>
+         
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">
+           <i class="fas fa-file mr-2"></i> 3 nouveaux rapports
+           <span class="float-right text-muted text-sm">2 jours</span>
+         </a>
+         <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item dropdown-footer">Voir toutes les notifications</a>
+       </div>
+     </li>
+   </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+</body>
+</html>

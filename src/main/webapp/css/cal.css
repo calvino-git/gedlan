@@ -1,0 +1,177 @@
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ""; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+a, a:hover {
+    text-decoration: none;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+.elegant-calencar {
+    width: 25em;
+    height: 31em;
+    border: 1px solid #c9c9c9;
+    -webkit-box-shadow: 0 0 5px #c9c9c9;
+    box-shadow: 0 0 5px #c9c9c9;
+    text-align: center;
+    margin: 4em auto;
+    position: relative;
+}
+
+#header {
+    height: 14em;
+    background-color: #4766f1;
+    margin-bottom: 1em;
+}
+
+.pre-button, .next-button {
+    margin-top: 1em;
+    font-size: 3em;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    color: rgb(111, 113, 121);
+    border-radius: 50%;
+}
+
+.pre-button:hover, .next-button:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.pre-button:active,.next-button:active{
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.pre-button {
+    float: left;
+    margin-left: 0.5em;
+}
+
+.next-button {
+    float: right;
+    margin-right: 0.5em;
+}
+
+.head-info {
+    float: left;
+    width: 16em;
+}
+
+.head-day {
+    font-size: 8em;
+    line-height: 1;
+    color: #fff;
+}
+
+.head-month {
+    font-size: 2em;
+    line-height: 1;
+    color: #fff;
+}
+
+#calendar {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#calendar tr {
+    height: 2em;
+    line-height: 2em;
+}
+
+
+tbody td:hover, .selected {
+    color: #fff;
+    background-color: #6a84ce;
+    border: none;
+}
+
+tbody td:active {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+#today {
+    background-color: #4766f1;
+    color: #c54444;
+    font-family: serif;
+
+}
+
+#disabled {
+    cursor: default;
+    background: #fff;
+}
+
+#disabled:hover {
+    background: #fff;
+    color: #c9c9c9;
+}
+
+#reset {
+    display: block;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 999;
+    color: #fff;
+    font-family: serif;
+    cursor: pointer;
+    padding: 0 0.5em;
+    height: 1.5em;
+    border: 0.1em solid #fff;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#reset:hover {
+    color: #4766f1;
+    border-color: #4766f1;
+}
+
+#reset:active{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);     
+}

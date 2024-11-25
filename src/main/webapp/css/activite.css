@@ -1,0 +1,118 @@
+.card{
+    width: 203%;
+}
+#btn{
+   width: 100px;
+}
+.col-4, #droite{
+    display: inline-block;
+}
+.col-4{
+    width:250px;
+}
+#g,#d{
+    display: inline-block;
+}
+
+#cat{
+    width: 200px;
+}
+#st{
+    width: 200px;
+}
+#droite{
+    vertical-align: top;
+    margin-left: 15%;
+}
+
+.photo{
+    width: 125px;
+    height: 130px;
+    border: 1px solid rgb(216, 204, 204);
+    border-radius: 5px;
+}
+
+.content-wrapper{
+    background-color: white;
+}
+.btn1{
+    width: 10%;
+}
+#g, #d{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#hd{
+    width: 200px;
+}
+#dated{
+    width: 200px;
+}
+#datef{
+    width: 200px;
+}
+#hf{
+    width: 200px;
+}
+#ti{
+    width: 200px;
+}
+#g{
+    width: 600px;
+}
+#d{
+    width: 400px;
+}
+#bar{
+    position: fixed;
+}
+select{
+    width: 200px;
+}
+.col1, .col2, .col3{
+    display: inline-block;
+}
+.col3{
+    vertical-align: top;
+}
+.col1,.col2{
+    width: 300px;
+}
+.col-4{
+    width: 250px;
+}
+
+#col1, #col2, #col3, #col4{
+display: inline-block;
+}
+#gauche, #droite{
+    display: inline-block;
+}
+#calendrier{
+    width: 485px;
+    margin-left: -12px;   
+}
+#desi{
+    width: 200px;
+}
+#desc{
+    width: 200px;
+}
+#dad{
+    width: 200px;
+}
+#df{
+    width: 200px;
+}
+#st{
+    width: 200px;
+}
+.form-control{
+    width: 250px;
+}
+#bout{
+    width: 150px;
+    display: inline-block;
+    vertical-align: bottom;
+}
